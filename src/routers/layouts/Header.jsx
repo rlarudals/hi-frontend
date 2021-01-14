@@ -50,7 +50,7 @@ const Header = ({ history }) => {
       <InnerWrapper>
         <ActionSpan onClick={() => moveLinkHandler("/")}>
           <Link to="/">
-            <img src={logoimg} width="200px" height="200px" />
+            <img src={logoimg} width="215px" height="245px" />
           </Link>
         </ActionSpan>
       </InnerWrapper>
