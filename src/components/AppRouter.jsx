@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
-import Header from "../routers/layouts/Hedaer";
+import Header from "../routers/layouts/Header";
 import Content from "../routers/layouts/Content";
 import Footer from "../routers/layouts/Footer";
 

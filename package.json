@@ -25,6 +25,7 @@
     "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^5.1.0",
+    "file-loader": "^6.2.0",
     "firebase": "^8.2.1",
     "graphql": "^15.4.0",
     "react": "^17.0.1",

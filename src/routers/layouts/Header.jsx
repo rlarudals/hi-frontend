@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import logoimg from "../../img/healthinfologo.png";
 
 const HeaderWrapper = styled.div`
   width: 100%;
@@ -48,7 +49,9 @@ const Header = ({ history }) => {
       <InnerWrapper width={`200px`}></InnerWrapper>
       <InnerWrapper>
         <ActionSpan onClick={() => moveLinkHandler("/")}>
-          <Link to="/"> LOGO</Link>
+          <Link to="/">
+            <img src={logoimg} width="200px" height="200px" />
+          </Link>
         </ActionSpan>
       </InnerWrapper>
       <InnerWrapper width={`200px`}>
