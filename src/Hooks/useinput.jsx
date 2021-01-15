@@ -7,7 +7,7 @@ const useInput = (initValue) => {
     setValue(e.target.value);
   };
 
-  return { value, onChange, setValue };
+  return { value, onChange, setValue }; // value, onChange는 textinput에 사용할 애들임.
 };
 
 export default useInput;
