@@ -97,6 +97,10 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
+<<<<<<< HEAD
+=======
+              // borderRight: "2px solid #999",
+>>>>>>> b7c3a079007cd5cf1f570d9b5e66a0a1b3eab55b
             }}
           >
             학교 보건
@@ -109,6 +113,10 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
+<<<<<<< HEAD
+=======
+              // borderRight: "2px solid #999",
+>>>>>>> b7c3a079007cd5cf1f570d9b5e66a0a1b3eab55b
             }}
           >
             생명 존중
@@ -121,6 +129,10 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
+<<<<<<< HEAD
+=======
+              // borderRight: "2px solid #999",
+>>>>>>> b7c3a079007cd5cf1f570d9b5e66a0a1b3eab55b
             }}
           >
             의약품
@@ -133,6 +145,10 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
+<<<<<<< HEAD
+=======
+              // borderRight: "2px solid #999",
+>>>>>>> b7c3a079007cd5cf1f570d9b5e66a0a1b3eab55b
             }}
           >
             체육
