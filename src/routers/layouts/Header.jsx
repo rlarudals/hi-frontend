@@ -97,10 +97,10 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "1px solid #0b0b0b",
+              borderRight: "2px solid #999",
             }}
           >
-            s
+            학교 보건
           </NavLink>
           <NavLink
             to="/lovelife"
@@ -110,10 +110,10 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "1px solid #0b0b0b",
+              borderRight: "2px solid #999",
             }}
           >
-            a
+            생명 존중
           </NavLink>
           <NavLink
             to="/medicine"
@@ -123,10 +123,10 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "1px solid #0b0b0b",
+              borderRight: "2px solid #999",
             }}
           >
-            v
+            의약품
           </NavLink>
           <NavLink
             to="/pe"
@@ -136,10 +136,10 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "1px solid #0b0b0b",
+              borderRight: "2px solid #999",
             }}
           >
-            g
+            체육
           </NavLink>
           <NavLink
             to="/eatinglife"
@@ -149,10 +149,9 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "1px solid #0b0b0b",
             }}
           >
-            h
+            식생활
           </NavLink>
         </DisplayTable>
       </InnerWrapper>
