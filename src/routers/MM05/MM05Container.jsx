@@ -29,33 +29,33 @@ const MM05Container = () => {
 
   const registUserHandler = async () => {
     if (!newName.value || newName.value.trim() === "") {
-      alert("이름은 필수 입력 상황입니다.");
+      alert("이름은 필수 입력 사항입니다.");
       return; /* return을 하면 현재 실행중인 함수를 중단시킴 */
     }
 
     console.log(newEmail.value);
 
     if (!newEmail.value || newEmail.value.trim() === "") {
-      alert("이메일은 필수 입력 상황입니다.");
+      alert("이메일은 필수 입력 사항입니다.");
       return;
     }
 
     console.log(newNickName.value);
 
     if (!newNickName.value || newNickName.value.trim() === "") {
-      alert("닉네임은 필수 입력 상황입니다.");
+      alert("닉네임은 필수 입력 사항입니다.");
       return;
     }
 
     console.log(newMobile.value);
 
     if (!newMobile.value || newMobile.value.trim() === "") {
-      alert("전화번호는 필수 입력 상황입니다.");
+      alert("전화번호는 필수 입력 사항입니다.");
       return;
     }
 
     if (!newZoneCode.value || newZoneCode.value.trim() === "") {
-      alert("주소는 필수 입력 상황입니다.");
+      alert("주소는 필수 입력 사항입니다.");
       return;
     }
 
