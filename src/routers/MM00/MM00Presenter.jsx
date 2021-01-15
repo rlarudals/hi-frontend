@@ -2,7 +2,6 @@ import React from "react";
 import { Wrapper, ImageBox } from "../../components/commonComponent";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import Bounce from "react-reveal/Bounce";
 
 const ViewText = styled.div`
   margin: 6px;
@@ -11,15 +10,6 @@ const ViewText = styled.div`
   color: ${(props) => (props.isTitle ? props.theme.blackColor : ``)};
   color: ${(props) => (props.isAuthor ? props.theme.whiteColor : ``)};
   color: ${(props) => (props.isDesc ? props.theme.greyColor : ``)};
-`;
-
-const BarWrapper = styled.div`
-  width: 1350px;
-  height: 35px;
-  border-radius: 8px;
-  background-color: ${(props) => props.theme.subThemeColor};
-  box-shadow: ${(props) => props.theme.boxShadow};
-  margin: 30px 0px;
 `;
 
 const WrapWrapper = styled(Wrapper)`
@@ -79,11 +69,6 @@ const MM00Presenter = ({ fileChangeHandler, imagePath }) => {
             </ViewText>
           </Wrapper>
         </Fade>
-      </Wrapper>
-      <Wrapper>
-        <Bounce>
-          <BarWrapper />
-        </Bounce>
       </Wrapper>
     </Wrapper>
   );

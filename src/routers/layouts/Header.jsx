@@ -5,7 +5,7 @@ import logoimg from "../../img/healthinfologo.png";
 
 const HeaderWrapper = styled.div`
   width: 100%;
-  height: 70px;
+  height: 240px;
   background-color: ${(props) => props.theme.mainThemeColor};
   color: ${(props) => props.theme.whiteColor};
   box-shadow: ${(props) => props.theme.boxShadow};
@@ -50,7 +50,7 @@ const Header = ({ history }) => {
       <InnerWrapper>
         <ActionSpan onClick={() => moveLinkHandler("/")}>
           <Link to="/">
-            <img src={logoimg} width="215px" height="245px" />
+            <img src={logoimg} width="200px" height="200px" />
           </Link>
         </ActionSpan>
       </InnerWrapper>
