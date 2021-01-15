@@ -26,11 +26,21 @@ const LogoBox = styled.div`
   width: 200px;
   height: 200px;
 
-  color: ${(props) => props.theme.blackColor};
   background-color: ${(props) => props.theme.subThemeColor};
 
-  margin-left: 60px;
-  margin-top: 40px;
+  margin-left: 90px;
+  margin-top: 50px;
+`;
+
+const FooterBox = styled.div`
+  width: 700px;
+  height: 100px;
+  background-color: ${(props) => props.theme.mainThemeColor};
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 `;
 
 const Footer = () => {
@@ -38,7 +48,8 @@ const Footer = () => {
     <FooterArea>
       <FooterAreaContent>
         <FooterWrapper width={`300px`} height={`300px`}>
-          <LogoBox></LogoBox>
+          <LogoBox />
+          <FooterBox />
         </FooterWrapper>
       </FooterAreaContent>
     </FooterArea>
