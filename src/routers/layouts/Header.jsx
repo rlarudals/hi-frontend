@@ -97,7 +97,7 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "2px solid #999",
+              // borderRight: "2px solid #999",
             }}
           >
             학교 보건
@@ -110,7 +110,7 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "2px solid #999",
+              // borderRight: "2px solid #999",
             }}
           >
             생명 존중
@@ -123,7 +123,7 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "2px solid #999",
+              // borderRight: "2px solid #999",
             }}
           >
             의약품
@@ -136,7 +136,7 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "2px solid #999",
+              // borderRight: "2px solid #999",
             }}
           >
             체육
