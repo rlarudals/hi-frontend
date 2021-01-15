@@ -52,7 +52,7 @@ const Image = styled.img`
   object-fit: cover;
 `;
 
-const MM00Presenter = ({ videoDatum, fileChangeHandler, imagePath }) => {
+const MM00Presenter = ({ fileChangeHandler, imagePath }) => {
   return (
     <Wrapper>
       <Wrapper hidden={`400px`} padding={`25px`} dr={`row`}>
@@ -61,7 +61,7 @@ const MM00Presenter = ({ videoDatum, fileChangeHandler, imagePath }) => {
             <ImageBox
               width={`400px`}
               height={`225px`}
-              bgImg={`https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80`}
+              bgImg={`https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2900&q=80`}
             />
           </Wrapper>
         </Fade>
@@ -84,36 +84,7 @@ const MM00Presenter = ({ videoDatum, fileChangeHandler, imagePath }) => {
         <Bounce>
           <BarWrapper />
         </Bounce>
-
-        <Fade bottom>
-          <WrapWrapper dr={`row`} margin={`0px 0px 100px 0px`}>
-            {videoDatum ? (
-              videoDatum.length === 0 ? (
-                <Wrapper>미디어 목록 없음</Wrapper>
-              ) : (
-                videoDatum.map((data, idx) => {
-                  return (
-                    <Fade bottom delay={idx * 60} key={idx}>
-                      <ImageBox
-                        width={`320px`}
-                        height={`180px`}
-                        margin={`5px`}
-                        bgImg={data.thumbnailPath}
-                      />
-                    </Fade>
-                  );
-                })
-              )
-            ) : (
-              <Wrapper>조회중 . . . </Wrapper>
-            )}
-          </WrapWrapper>
-        </Fade>
       </Wrapper>
-      {/*flie uploadtest */}
-      <Image src={imagePath} />
-      <FileInput type="file" id="file-js" onChange={fileChangeHandler} />
-      <FileLabel htmlFor="file-js">파일선택</FileLabel>
     </Wrapper>
   );
 };
