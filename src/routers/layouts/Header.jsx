@@ -40,11 +40,11 @@ const ActionSpan = styled.span`
 `;
 
 const ActionButton = styled.button`
-  padding: 5px;
-  margin: 5px;
+  padding: 7px;
+  margin: 8px;
   color: #30336b;
   background: none;
-  background-color: #7ed6df;
+  background-color: #fff;
   border: none;
   border-radius: ${(props) => props.theme.radius};
   font-weight: 600;
@@ -52,7 +52,7 @@ const ActionButton = styled.button`
   transition: 0.5s;
 
   &:hover {
-    color: #7ed6df;
+    color: #fff;
     background-color: #30336b;
   }
 `;
@@ -97,7 +97,6 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "2px solid #999",
             }}
           >
             학교 보건
@@ -110,7 +109,6 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "2px solid #999",
             }}
           >
             생명 존중
@@ -123,7 +121,6 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "2px solid #999",
             }}
           >
             의약품
@@ -136,7 +133,6 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
-              borderRight: "2px solid #999",
             }}
           >
             체육

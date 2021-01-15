@@ -9,9 +9,8 @@ const FooterArea = styled.footer`
 
 const FooterAreaContent = styled.div`
   width: 100%;
-  background-color: ${(props) => props.theme.mainThemeColor};
+  background-color: ${(props) => props.theme.greyColor};
   color: ${(props) => props.theme.blackColor};
-  border-top: ${(props) => props.theme.border};
 
   display: flex;
   flex-direction: row;
@@ -23,41 +22,23 @@ const FooterWrapper = styled.div`
   height: ${(props) => props.height || `100%`};
 `;
 
-const TextBox = styled.div`
-  width: 100%;
-  height: 100px;
+const LogoBox = styled.div`
+  width: 200px;
+  height: 200px;
 
-  display: block;
+  color: ${(props) => props.theme.blackColor};
+  background-color: ${(props) => props.theme.subThemeColor};
 
-  transition: 0.5s;
-
-  &:hover {
-    font-weight: 700;
-  }
-`;
-
-const Text = styled.div`
-  margin-left: 15px;
-  font-size: 17px;
+  margin-left: 60px;
+  margin-top: 40px;
 `;
 
 const Footer = () => {
   return (
     <FooterArea>
       <FooterAreaContent>
-        <FooterWrapper width={`450px`}>
-          <FooterWrapper width={`100%`} height={`200px`}>
-            logo
-          </FooterWrapper>
-          <FooterWrapper>
-            <TextBox>
-              <Text>(주)단순한주식회사(대표: 김경민,방효진,정예림)</Text>
-
-              <Text>사업자 등록 번호:123-45-67890</Text>
-
-              <Text>통신판매업신고번호 : 제 2020-충남공주-100</Text>
-            </TextBox>
-          </FooterWrapper>
+        <FooterWrapper width={`300px`} height={`300px`}>
+          <LogoBox></LogoBox>
         </FooterWrapper>
       </FooterAreaContent>
     </FooterArea>
