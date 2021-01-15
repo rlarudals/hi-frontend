@@ -1,6 +1,6 @@
 export default {
-  mainThemeColor: "#5696cb",
-  subThemeColor: "#63b8ff",
+  mainThemeColor: "#63b8ff",
+  subThemeColor: "#5696cb",
   pointColor: "#133660",
   errorColor: "#d63031",
   checkColor: "#05c46b",
