@@ -4,18 +4,18 @@ export const REGIST_USER = gql`
   mutation registUser(
     $name: String!
     $email: String!
-    $nickname: String!
+    $nickName: String!
     $mobile: String!
-    $zonecode: String!
+    $zoneCode: String!
     $address: String!
     $detailAddress: String!
   ) {
     registUser(
       name: $name
       email: $email
-      nickname: $nickname
+      nickName: $nickName
       mobile: $mobile
-      zonecode: $zonecode
+      zoneCode: $zoneCode
       address: $address
       detailAddress: $detailAddress
     )
