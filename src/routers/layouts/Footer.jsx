@@ -22,7 +22,7 @@ const FooterAreaContent = styled.div`
   color: ${(props) => props.theme.blackColor};
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  padding: 25px;
 `;
 
 const FooterWrapper = styled.div`
@@ -33,7 +33,6 @@ const FooterWrapper = styled.div`
 const TextBox = styled.div`
   width: 100%;
   height: 5px;
-  margin: 10px;
   padding: 20px;
 
   align-items: center;
@@ -52,10 +51,14 @@ const Footer = () => {
     <FooterArea>
       <FooterAreaTop>이용약관</FooterAreaTop>
       <FooterAreaContent>
-        <FooterWrapper width={`450px`}>
-          <FooterWrapper width={`100%`} height={`50%`}>
+        <FooterWrapper>
+          <FooterWrapper>
             <TextBox>
-              <Text>공주 회사</Text>
+              <Text>여고 회사 (대표: 김경민,방효진,정예림)</Text>
+            </TextBox>
+
+            <TextBox>
+              <Text>충청남도 공주시 금학동</Text>
             </TextBox>
           </FooterWrapper>
         </FooterWrapper>
