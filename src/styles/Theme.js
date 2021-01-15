@@ -10,7 +10,7 @@ export default {
   greyColor: "#808080",
 
   radius: "4px",
-  border: "1px solid #777",
+  border: "2px solid #777",
 
   boxShadow: "4.2px 2.5px 4px #999",
 };

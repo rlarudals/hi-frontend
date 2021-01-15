@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import logoimg from "../../img/healthinfologo.png";
+import { NavLink } from "react-router-dom";
+import logoimg from "../../img/healthinfofontlogo.png";
 
 const HeaderWrapper = styled.div`
   width: 100%;
-  height: 240px;
-  background-color: ${(props) => props.theme.mainThemeColor};
+  height: 70px;
+  //background-color: ${(props) => props.theme.mainThemeColor};
   color: ${(props) => props.theme.whiteColor};
   box-shadow: ${(props) => props.theme.boxShadow};
   margin-bottom: 40px;
@@ -14,7 +14,7 @@ const HeaderWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 const InnerWrapper = styled.div`
@@ -39,6 +39,40 @@ const ActionSpan = styled.span`
   }
 `;
 
+const ActionButton = styled.button`
+  padding: 5px;
+  margin: 5px;
+  color: #30336b;
+  background: none;
+  background-color: #7ed6df;
+  border: none;
+  border-radius: ${(props) => props.theme.radius};
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    color: #7ed6df;
+    background-color: #30336b;
+  }
+`;
+
+const DisplayTable = styled.div`
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  table-layout: fixed;
+`;
+
+const DisplayTableCell = styled.div`
+  display: table-cell;
+  vertical-align: middle;
+  height: 70px;
+  color: black;
+  text-align: center;
+`;
+
 const Header = ({ history }) => {
   const moveLinkHandler = (link) => {
     history.push(link);
@@ -46,21 +80,89 @@ const Header = ({ history }) => {
 
   return (
     <HeaderWrapper>
-      <InnerWrapper width={`200px`}></InnerWrapper>
-      <InnerWrapper>
+      <InnerWrapper width={`170px`}>
         <ActionSpan onClick={() => moveLinkHandler("/")}>
-          <Link to="/">
-            <img src={logoimg} width="200px" height="200px" />
-          </Link>
+          <NavLink to="/">
+            <img src={logoimg} width="170px" height="30px" />
+          </NavLink>
         </ActionSpan>
       </InnerWrapper>
+      <InnerWrapper width={`900px`}>
+        <DisplayTable>
+          <NavLink
+            to="/schoolh"
+            style={{
+              display: "table-cell",
+              verticalAlign: "middle",
+              height: "70px",
+              color: "black",
+              textAlign: "center",
+              borderRight: "1px solid #0b0b0b",
+            }}
+          >
+            s
+          </NavLink>
+          <NavLink
+            to="/lovelife"
+            style={{
+              display: "table-cell",
+              verticalAlign: "middle",
+              height: "70px",
+              color: "black",
+              textAlign: "center",
+              borderRight: "1px solid #0b0b0b",
+            }}
+          >
+            a
+          </NavLink>
+          <NavLink
+            to="/medicine"
+            style={{
+              display: "table-cell",
+              verticalAlign: "middle",
+              height: "70px",
+              color: "black",
+              textAlign: "center",
+              borderRight: "1px solid #0b0b0b",
+            }}
+          >
+            v
+          </NavLink>
+          <NavLink
+            to="/pe"
+            style={{
+              display: "table-cell",
+              verticalAlign: "middle",
+              height: "70px",
+              color: "black",
+              textAlign: "center",
+              borderRight: "1px solid #0b0b0b",
+            }}
+          >
+            g
+          </NavLink>
+          <NavLink
+            to="/eatinglife"
+            style={{
+              display: "table-cell",
+              verticalAlign: "middle",
+              height: "70px",
+              color: "black",
+              textAlign: "center",
+              borderRight: "1px solid #0b0b0b",
+            }}
+          >
+            h
+          </NavLink>
+        </DisplayTable>
+      </InnerWrapper>
       <InnerWrapper width={`200px`}>
-        <ActionSpan onClick={() => moveLinkHandler("/signIn")}>
+        <ActionButton onClick={() => moveLinkHandler("/signIn")}>
           SING IN
-        </ActionSpan>
-        <ActionSpan onClick={() => moveLinkHandler("/signUp")}>
+        </ActionButton>
+        <ActionButton onClick={() => moveLinkHandler("/signUp")}>
           SING UP
-        </ActionSpan>
+        </ActionButton>
       </InnerWrapper>
     </HeaderWrapper>
   );
