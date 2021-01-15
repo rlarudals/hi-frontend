@@ -8,18 +8,13 @@ const FooterArea = styled.footer`
   color: ${(props) => props.theme.blackColor};
 `;
 
-const FooterAreaTop = styled.div`
-  width: 100%;
-  height: 50px;
-  background-color: ${(props) => props.theme.mainThemeColor};
-  color: ${(props) => props.theme.blackColor};
-`;
-
 const FooterAreaContent = styled.div`
   width: 100%;
   height: 100%;
-  background-color: ${(props) => props.theme.subThemeColor};
+  background-color: ${(props) => props.theme.mainThemeColor};
   color: ${(props) => props.theme.blackColor};
+  border-top: ${(props) => props.theme.border};
+
   display: flex;
   flex-direction: row;
   padding: 25px;
@@ -32,33 +27,34 @@ const FooterWrapper = styled.div`
 
 const TextBox = styled.div`
   width: 100%;
-  height: 5px;
-  padding: 20px;
+  height: 100px;
 
   align-items: center;
   justify-content: flex-start;
-  transition: 0.4s;
+  transition: 0.5s;
 
   &:hover {
     font-weight: 700;
   }
 `;
 
-const Text = styled.div``;
+const Text = styled.div`
+  margin-left: 15px;
+`;
 
 const Footer = () => {
   return (
     <FooterArea>
-      <FooterAreaTop>이용약관</FooterAreaTop>
       <FooterAreaContent>
-        <FooterWrapper>
+        <FooterWrapper width={`450px`}>
+          <FooterWrapper width={`100%`} height={`200px`}>
+            logo
+          </FooterWrapper>
           <FooterWrapper>
             <TextBox>
-              <Text>여고 회사 (대표: 김경민,방효진,정예림)</Text>
-            </TextBox>
-
-            <TextBox>
-              <Text>충청남도 공주시 금학동</Text>
+              <Text width={`100%`}>
+                여고 회사 (대표: 김경민,방효진,정예림) / 충청남도 공주시 금학동
+              </Text>
             </TextBox>
           </FooterWrapper>
         </FooterWrapper>

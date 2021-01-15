@@ -28,16 +28,16 @@ const TextInput = styled.input`
   border-radius: 10px;
   margin: 10px 0px;
   padding: 0px 10px;
+
   outline: none;
   border: 1px solid ${(props) => props.theme.greyColor};
   background: none;
+
   box-shadow: ${(props) => props.theme.boxShadow};
   transition: 0.5s;
-
   &:hover {
     box-shadow: 5px 5px 5px #0b0b0b;
   }
-
   &:focus {
     box-shadow: 5px 5px 5px #0b0b0b;
   }
@@ -53,11 +53,15 @@ const Button = styled.button`
   width: 250px;
   height: 30px;
   border-radius: ${(props) => props.theme.radius};
+
   outline: none;
   border: none;
+
   background-color: ${(props) => props.theme.checkColor};
   color: ${(props) => props.theme.whiteColor};
+
   cursor: pointer;
+
   margin: 20px 0px 50px 0px;
 
   transition: 0.5s;
@@ -73,13 +77,16 @@ const PostButton = styled.button`
   width: 140px;
   height: 30px;
   border-radius: ${(props) => props.theme.radius};
+
   outline: none;
   border: none;
+
   background-color: ${(props) => props.theme.pointColor};
   color: ${(props) => props.theme.whiteColor};
-  cursor: pointer;
-  margin-left: 10px;
 
+  cursor: pointer;
+
+  margin-left: 10px;
   transition: 0.5s;
 
   &:hover {
@@ -90,10 +97,10 @@ const PostButton = styled.button`
 `;
 
 const MM05Presenter = ({
-  newName,
   newEmail,
-  newMobile,
+  newName,
   newNickName,
+  newMobile,
   newZoneCode,
   newAddress,
   newDetailAddress,
@@ -122,13 +129,13 @@ const MM05Presenter = ({
             readOnly={true}
             {...newZoneCode}
           />
-          <PostButton onClick={searchPostHandler}>Search</PostButton>
+          <PostButton onClick={searchPostHandler}>검색</PostButton>
         </RowWrapper>
         <TextInput
           type="text"
           placeholder={`ADDRESS...`}
-          {...newAddress}
           readOnly={true}
+          {...newAddress}
         />
         <TextInput
           type="text"
