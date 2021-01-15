@@ -3,14 +3,12 @@ import styled from "styled-components";
 
 const FooterArea = styled.footer`
   width: 100%;
-  height: 500px;
   background-color: ${(props) => props.theme.subThemeColor};
   color: ${(props) => props.theme.blackColor};
 `;
 
 const FooterAreaContent = styled.div`
   width: 100%;
-  height: 100%;
   background-color: ${(props) => props.theme.mainThemeColor};
   color: ${(props) => props.theme.blackColor};
   border-top: ${(props) => props.theme.border};
@@ -29,8 +27,8 @@ const TextBox = styled.div`
   width: 100%;
   height: 100px;
 
-  align-items: center;
-  justify-content: flex-start;
+  display: block;
+
   transition: 0.5s;
 
   &:hover {
@@ -40,6 +38,7 @@ const TextBox = styled.div`
 
 const Text = styled.div`
   margin-left: 15px;
+  font-size: 17px;
 `;
 
 const Footer = () => {
@@ -52,9 +51,11 @@ const Footer = () => {
           </FooterWrapper>
           <FooterWrapper>
             <TextBox>
-              <Text width={`100%`}>
-                여고 회사 (대표: 김경민,방효진,정예림) / 충청남도 공주시 금학동
-              </Text>
+              <Text>(주)단순한주식회사(대표: 김경민,방효진,정예림)</Text>
+
+              <Text>사업자 등록 번호:123-45-67890</Text>
+
+              <Text>통신판매업신고번호 : 제 2020-충남공주-100</Text>
             </TextBox>
           </FooterWrapper>
         </FooterWrapper>
