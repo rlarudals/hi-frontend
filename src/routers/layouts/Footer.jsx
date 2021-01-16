@@ -78,7 +78,7 @@ const Footer = () => {
         <FooterWrapper>
           <FooterBox>
             <TextBox>
-              <Text>(주) 단순한주식회사</Text>
+              <Text>(주)단순한주식회사</Text>
               <Text>사업자 등록번호 : 128-394-29342</Text>
               <Text>통신판매업신고번호 : 제 2020-충남공주-1002</Text>
               <Text>법인명 : (주)health</Text>
