@@ -28,19 +28,44 @@ const LogoBox = styled.div`
 
   background-color: ${(props) => props.theme.subThemeColor};
 
-  margin-left: 90px;
+  display: flex;
+  flex-direction: row;
+
+  margin-left: 240px;
   margin-top: 50px;
 `;
 
 const FooterBox = styled.div`
-  width: 700px;
-  height: 100px;
+  width: 400px;
+  height: 200px;
   background-color: ${(props) => props.theme.mainThemeColor};
 
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+
+  margin-left: 200px;
+  margin-top: 50px;
+`;
+
+const TextBox = styled.div`
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: 0.5s;
+
+  padding: 10px;
+
+  &:hover {
+    font-weight: 700;
+  }
+`;
+
+const Text = styled.div`
+  font-size: 13px;
+
+  margin-bottom: 10px;
 `;
 
 const Footer = () => {
@@ -48,8 +73,21 @@ const Footer = () => {
     <FooterArea>
       <FooterAreaContent>
         <FooterWrapper width={`300px`} height={`300px`}>
-          <LogoBox />
-          <FooterBox />
+          <LogoBox>LOGO</LogoBox>
+        </FooterWrapper>
+        <FooterWrapper>
+          <FooterBox>
+            <TextBox>
+              <Text>(주) 단순한주식회사</Text>
+              <Text>사업자 등록번호 : 128-394-29342</Text>
+              <Text>통신판매업신고번호 : 제 2020-충남공주-1002</Text>
+              <Text>법인명 : (주)health</Text>
+              <Text>대표이사 : 김경민,방효진,정예림</Text>
+              <Text>개인정보관리책임자 : 김경민,방효진,정예림</Text>
+              <Text>주소 : 충남 공주시 우금티로 531</Text>
+              <Text>© 2021 health</Text>
+            </TextBox>
+          </FooterBox>
         </FooterWrapper>
       </FooterAreaContent>
     </FooterArea>
