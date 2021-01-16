@@ -61,10 +61,10 @@ const MM00Presenter = ({ fileChangeHandler, imagePath }) => {
             <ViewText size={`20px`} weight={`700`} isTitle={true}>
               Text 1
             </ViewText>
-            <ViewText size={`12px`} weight={`400`} isTitle={true}>
+            <ViewText size={`15px`} weight={`400`} isTitle={true}>
               Text 2
             </ViewText>
-            <ViewText size={`13.5px`} weight={`500`} isTitle={true}>
+            <ViewText size={`13px`} weight={`500`} isTitle={true}>
               Text 3
             </ViewText>
           </Wrapper>

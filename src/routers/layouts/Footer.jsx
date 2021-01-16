@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import logo from "../../img/healthinfologo.png";
 
 const FooterArea = styled.footer`
   width: 100%;
@@ -26,26 +27,22 @@ const LogoBox = styled.div`
   width: 200px;
   height: 200px;
 
-  background-color: ${(props) => props.theme.subThemeColor};
-
   display: flex;
   flex-direction: row;
 
-  margin-left: 240px;
-  margin-top: 45px;
+  margin-left: 250px;
+  margin-top: 10px;
 `;
 
 const FooterBox = styled.div`
-  width: 400px;
-  height: 220px;
-
-  background-color: ${(props) => props.theme.mainThemeColor};
+  width: 500px;
+  height: 230px;
 
   display: flex;
   flex-direction: row;
 
-  margin-left: 200px;
-  margin-top: 45px;
+  margin-left: 190px;
+  margin-top: 10px;
 `;
 
 const TextBox = styled.div`
@@ -66,7 +63,7 @@ const TextBox = styled.div`
 const Text = styled.div`
   font-size: 13px;
 
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 
   cursor: pointer;
 `;
@@ -76,7 +73,9 @@ const Footer = () => {
     <FooterArea>
       <FooterAreaContent>
         <FooterWrapper width={`300px`} height={`300px`}>
-          <LogoBox>LOGO</LogoBox>
+          <LogoBox>
+            <img src={logo} width={`200px`} height={`200px`} />
+          </LogoBox>
         </FooterWrapper>
         <FooterWrapper>
           <FooterBox>
@@ -87,7 +86,7 @@ const Footer = () => {
               <Text>법인명 : (주)health</Text>
               <Text>대표이사 : 김경민,방효진,정예림</Text>
               <Text>개인정보관리책임자 : 김경민,방효진,정예림</Text>
-              <Text>주소 : 충남 공주시 우금티로 531</Text>
+              <Text>주소 : 충남 공주시 우금티로 530</Text>
               <Text>© 2021 health</Text>
             </TextBox>
           </FooterBox>
