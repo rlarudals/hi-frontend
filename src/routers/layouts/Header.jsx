@@ -73,6 +73,28 @@ const DisplayTableCell = styled.div`
   text-align: center;
 `;
 
+const HeaderBox = styled.div`
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transition: translate(-50%, -50%);
+`;
+
+const HeaderSubBox = styled.div`
+  background: #029;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  color: #999;
+
+  position: relative;
+  cursor: pointer;
+  font-family: poppins;
+  font-size: 14px;
+`;
+
 const Header = ({ history }) => {
   const moveLinkHandler = (link) => {
     history.push(link);
