@@ -16,10 +16,14 @@ const FooterAreaContent = styled.div`
 
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   padding: 15px;
 `;
 
 const FooterWrapper = styled.div`
+  margin-left: 10%;
+
   width: ${(props) => props.width};
   height: ${(props) => props.height || `100%`};
 `;
@@ -34,7 +38,6 @@ const LogoBox = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  margin-left: 440px;
   margin-top: 40px;
 `;
 
@@ -45,7 +48,6 @@ const FooterBox = styled.div`
   display: flex;
   flex-direction: row;
 
-  margin-left: 400px;
   margin-top: 40px;
 `;
 
@@ -86,6 +88,8 @@ const Footer = () => {
             <Text>사업자 등록번호 : 14523-94-03562</Text>
             <Text>통신판매업신고번호 : 제 2020-충남공주-1002</Text>
             <Text>법인명 : (주)health</Text>
+          </TextBox>
+          <TextBox>
             <Text>대표이사 : 김경민,방효진,정예림</Text>
             <Text>개인정보관리책임자 : 김경민,방효진,정예림</Text>
             <Text>주소 : 충남 공주시 우금티로 530</Text>
