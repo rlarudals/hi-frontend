@@ -32,19 +32,20 @@ const LogoBox = styled.div`
   flex-direction: row;
 
   margin-left: 240px;
-  margin-top: 50px;
+  margin-top: 45px;
 `;
 
 const FooterBox = styled.div`
   width: 400px;
-  height: 200px;
+  height: 220px;
+
   background-color: ${(props) => props.theme.mainThemeColor};
 
   display: flex;
   flex-direction: row;
 
   margin-left: 200px;
-  margin-top: 50px;
+  margin-top: 45px;
 `;
 
 const TextBox = styled.div`
@@ -65,7 +66,9 @@ const TextBox = styled.div`
 const Text = styled.div`
   font-size: 13px;
 
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+
+  cursor: pointer;
 `;
 
 const Footer = () => {
@@ -77,7 +80,7 @@ const Footer = () => {
         </FooterWrapper>
         <FooterWrapper>
           <FooterBox>
-            <TextBox>
+            <TextBox width={`100%`}>
               <Text>(주)단순한주식회사</Text>
               <Text>사업자 등록번호 : 128-394-29342</Text>
               <Text>통신판매업신고번호 : 제 2020-충남공주-1002</Text>
