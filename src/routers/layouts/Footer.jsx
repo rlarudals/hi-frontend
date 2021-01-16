@@ -22,8 +22,6 @@ const FooterAreaContent = styled.div`
 `;
 
 const FooterWrapper = styled.div`
-  margin-left: 10%;
-
   width: ${(props) => props.width};
   height: ${(props) => props.height || `100%`};
 `;
