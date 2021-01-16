@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../../img/healthinfologo.png";
+import logoimg from "../../img/healthinfofontlogo.png";
 
 const FooterArea = styled.footer`
   width: 100%;
@@ -10,12 +10,13 @@ const FooterArea = styled.footer`
 
 const FooterAreaContent = styled.div`
   width: 100%;
+
   background-color: ${(props) => props.theme.greyColor};
   color: ${(props) => props.theme.blackColor};
 
   display: flex;
   flex-direction: row;
-  padding: 25px;
+  padding: 15px;
 `;
 
 const FooterWrapper = styled.div`
@@ -30,8 +31,11 @@ const LogoBox = styled.div`
   display: flex;
   flex-direction: row;
 
-  margin-left: 250px;
-  margin-top: 10px;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-left: 440px;
+  margin-top: 40px;
 `;
 
 const FooterBox = styled.div`
@@ -41,8 +45,8 @@ const FooterBox = styled.div`
   display: flex;
   flex-direction: row;
 
-  margin-left: 190px;
-  margin-top: 10px;
+  margin-left: 400px;
+  margin-top: 40px;
 `;
 
 const TextBox = styled.div`
@@ -53,17 +57,15 @@ const TextBox = styled.div`
 
   transition: 0.5s;
 
-  padding: 10px;
-
   &:hover {
     font-weight: 700;
   }
 `;
 
 const Text = styled.div`
-  font-size: 13px;
+  font-size: 14px;
 
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 
   cursor: pointer;
 `;
@@ -74,12 +76,12 @@ const Footer = () => {
       <FooterAreaContent>
         <FooterWrapper width={`300px`} height={`300px`}>
           <LogoBox>
-            <img src={logo} width={`200px`} height={`200px`} />
+            <img src={logoimg} width="190px" height="30px" />
           </LogoBox>
         </FooterWrapper>
         <FooterWrapper>
           <FooterBox>
-            <TextBox width={`100%`}>
+            <TextBox width={`100%`} height={`300px`}>
               <Text>(주)단순한주식회사</Text>
               <Text>사업자 등록번호 : 14523-94-03562</Text>
               <Text>통신판매업신고번호 : 제 2020-충남공주-1002</Text>
