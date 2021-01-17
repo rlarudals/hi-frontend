@@ -65,34 +65,27 @@ const DisplayTable = styled.div`
   table-layout: fixed;
 `;
 
-const DisplayTableCell = styled.div`
-  display: table-cell;
-  vertical-align: middle;
-  height: 70px;
-  color: black;
-  text-align: center;
-`;
+const DropdownBox = styled.div`
+  width: 210px;
+  height: 60px;
 
-const HeaderBox = styled.div`
-  display: inline-block;
-  text-align: center;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transition: translate(-50%, -50%);
-`;
-
-const HeaderSubBox = styled.div`
-  background: #029;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  color: #999;
-
-  position: relative;
   cursor: pointer;
-  font-family: poppins;
-  font-size: 14px;
+  transition: 0.5;
+
+  padding: 10px;
+
+  margin-top: 140px;
+  position: absolute;
+
+  text-decoration: none;
+  color: #0b0b0b;
+
+  background-color: ${(props) => props.theme.mainThemeColor};
+
+  &:hover {
+    display: block;
+    color: #fff;
+  }
 `;
 
 const Header = ({ history }) => {
@@ -109,6 +102,9 @@ const Header = ({ history }) => {
           </NavLink>
         </ActionSpan>
       </InnerWrapper>
+
+      <DropdownBox>submenu</DropdownBox>
+
       <InnerWrapper width={`900px`}>
         <DisplayTable>
           <NavLink
@@ -119,11 +115,13 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
+
               // borderRight: "2px solid #999",
             }}
           >
             학교 보건
           </NavLink>
+
           <NavLink
             to="/lovelife"
             style={{
@@ -135,8 +133,9 @@ const Header = ({ history }) => {
               // borderRight: "2px solid #999",
             }}
           >
-            생명 존중
+            생명
           </NavLink>
+
           <NavLink
             to="/medicine"
             style={{
@@ -150,6 +149,7 @@ const Header = ({ history }) => {
           >
             의약품
           </NavLink>
+
           <NavLink
             to="/pe"
             style={{
@@ -163,6 +163,7 @@ const Header = ({ history }) => {
           >
             체육
           </NavLink>
+
           <NavLink
             to="/eatinglife"
             style={{
