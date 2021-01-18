@@ -10,6 +10,12 @@ const MM01Area = styled.div`
   background-color: ${(props) => props.theme.greyColor};
 `;
 
+const MM01AreaBox = styled.div`
+  width: 200px;
+  height: 100px;
+
+  margin-top: 20px;
+`;
 const MM01Presenter = () => {
   return <MM01Area>MM01</MM01Area>;
 };

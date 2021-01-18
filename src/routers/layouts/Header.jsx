@@ -65,29 +65,6 @@ const DisplayTable = styled.div`
   table-layout: fixed;
 `;
 
-const DropdownBox = styled.div`
-  width: 210px;
-  height: 60px;
-
-  cursor: pointer;
-  transition: 0.5;
-
-  padding: 10px;
-
-  margin-top: 140px;
-  position: absolute;
-
-  text-decoration: none;
-  color: #0b0b0b;
-
-  background-color: ${(props) => props.theme.mainThemeColor};
-
-  &:hover {
-    display: block;
-    color: #fff;
-  }
-`;
-
 const Header = ({ history }) => {
   const moveLinkHandler = (link) => {
     history.push(link);
@@ -102,8 +79,6 @@ const Header = ({ history }) => {
           </NavLink>
         </ActionSpan>
       </InnerWrapper>
-
-      <DropdownBox>submenu</DropdownBox>
 
       <InnerWrapper width={`900px`}>
         <DisplayTable>
