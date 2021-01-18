@@ -107,17 +107,17 @@ const Header = ({ history }) => {
           <DisplayTableCell>
             <Menu menuButton={<MenuButton>학교보건</MenuButton>}>
               <MenuItem>
-                <Link to="/schoolh" style={{ color: "black" }}>
+                <Link to="/schoolhone" style={{ color: "black" }}>
                   신체건강
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/schoolh" style={{ color: "black" }}>
+                <Link to="/schoolhtwo" style={{ color: "black" }}>
                   정신건강
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/schoolh" style={{ color: "black" }}>
+                <Link to="/schoolhthr" style={{ color: "black" }}>
                   사고예방과 응급처치
                 </Link>
               </MenuItem>
@@ -126,17 +126,17 @@ const Header = ({ history }) => {
           <DisplayTableCell>
             <Menu menuButton={<MenuButton>생명</MenuButton>}>
               <MenuItem>
-                <Link to="/lovelife" style={{ color: "black" }}>
+                <Link to="/lovelifeone" style={{ color: "black" }}>
                   자살예방
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/lovelife" style={{ color: "black" }}>
+                <Link to="/lovelifetwo" style={{ color: "black" }}>
                   생명공학자료실
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/schoolh" style={{ color: "black" }}>
+                <Link to="/lovelifethr" style={{ color: "black" }}>
                   생명존중
                 </Link>
               </MenuItem>
@@ -146,17 +146,17 @@ const Header = ({ history }) => {
           <DisplayTableCell>
             <Menu menuButton={<MenuButton>의약품</MenuButton>}>
               <MenuItem>
-                <Link to="/medicine" style={{ color: "black" }}>
+                <Link to="/medicineone" style={{ color: "black" }}>
                   의약품이란?
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/medicine" style={{ color: "black" }}>
+                <Link to="/medicinetwo" style={{ color: "black" }}>
                   약물이상반응
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/schoolh" style={{ color: "black" }}>
+                <Link to="/medicinethr" style={{ color: "black" }}>
                   의약품 안전정보
                 </Link>
               </MenuItem>
@@ -166,17 +166,17 @@ const Header = ({ history }) => {
           <DisplayTableCell>
             <Menu menuButton={<MenuButton>체육</MenuButton>}>
               <MenuItem>
-                <Link to="/pe" style={{ color: "black" }}>
+                <Link to="/peone" style={{ color: "black" }}>
                   건강체력증진
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/pe" style={{ color: "black" }}>
+                <Link to="/petwo" style={{ color: "black" }}>
                   학교스포츠클럽
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/schoolh" style={{ color: "black" }}>
+                <Link to="/pethr" style={{ color: "black" }}>
                   학교체육시설
                 </Link>
               </MenuItem>
@@ -186,17 +186,17 @@ const Header = ({ history }) => {
           <DisplayTableCell>
             <Menu menuButton={<MenuButton>식생활</MenuButton>}>
               <MenuItem>
-                <Link to="/eatinglife" style={{ color: "black" }}>
+                <Link to="/eatinglifeone" style={{ color: "black" }}>
                   건강한 밥상
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/eatinglife" style={{ color: "black" }}>
+                <Link to="/eatinglifetwo" style={{ color: "black" }}>
                   권장 칼로리
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/schoolh" style={{ color: "black" }}>
+                <Link to="/eatinglifethr" style={{ color: "black" }}>
                   식생활 정보 사이트
                 </Link>
               </MenuItem>
