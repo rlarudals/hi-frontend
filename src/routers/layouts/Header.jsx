@@ -65,14 +65,6 @@ const DisplayTable = styled.div`
   table-layout: fixed;
 `;
 
-const DisplayTableCell = styled.div`
-  display: table-cell;
-  vertical-align: middle;
-  height: 70px;
-  color: black;
-  text-align: center;
-`;
-
 const Header = ({ history }) => {
   const moveLinkHandler = (link) => {
     history.push(link);
@@ -87,6 +79,7 @@ const Header = ({ history }) => {
           </NavLink>
         </ActionSpan>
       </InnerWrapper>
+
       <InnerWrapper width={`900px`}>
         <DisplayTable>
           <NavLink
@@ -97,11 +90,13 @@ const Header = ({ history }) => {
               height: "70px",
               color: "black",
               textAlign: "center",
+
               // borderRight: "2px solid #999",
             }}
           >
             학교 보건
           </NavLink>
+
           <NavLink
             to="/lovelife"
             style={{
@@ -113,8 +108,9 @@ const Header = ({ history }) => {
               // borderRight: "2px solid #999",
             }}
           >
-            생명 존중
+            생명
           </NavLink>
+
           <NavLink
             to="/medicine"
             style={{
@@ -128,6 +124,7 @@ const Header = ({ history }) => {
           >
             의약품
           </NavLink>
+
           <NavLink
             to="/pe"
             style={{
@@ -141,6 +138,7 @@ const Header = ({ history }) => {
           >
             체육
           </NavLink>
+
           <NavLink
             to="/eatinglife"
             style={{

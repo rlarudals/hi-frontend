@@ -9,13 +9,13 @@ const FooterArea = styled.footer`
 `;
 
 const FooterAreaContent = styled.div`
-  width: 100%;
-
   background-color: ${(props) => props.theme.greyColor};
   color: ${(props) => props.theme.blackColor};
 
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   padding: 15px;
 `;
 
@@ -34,7 +34,6 @@ const LogoBox = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  margin-left: 440px;
   margin-top: 40px;
 `;
 
@@ -45,7 +44,6 @@ const FooterBox = styled.div`
   display: flex;
   flex-direction: row;
 
-  margin-left: 400px;
   margin-top: 40px;
 `;
 
@@ -54,6 +52,9 @@ const TextBox = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
 
   transition: 0.5s;
 
@@ -76,16 +77,18 @@ const Footer = () => {
       <FooterAreaContent>
         <FooterWrapper width={`300px`} height={`300px`}>
           <LogoBox>
-            <img src={logoimg} width="190px" height="30px" />
+            <img src={logoimg} width="190px" height="40px" />
           </LogoBox>
         </FooterWrapper>
 
         <FooterBox>
-          <TextBox width={`100%`} height={`300px`}>
+          <TextBox width={`300px`} height={`400px`}>
             <Text>(주)단순한주식회사</Text>
             <Text>사업자 등록번호 : 14523-94-03562</Text>
             <Text>통신판매업신고번호 : 제 2020-충남공주-1002</Text>
             <Text>법인명 : (주)health</Text>
+          </TextBox>
+          <TextBox>
             <Text>대표이사 : 김경민,방효진,정예림</Text>
             <Text>개인정보관리책임자 : 김경민,방효진,정예림</Text>
             <Text>주소 : 충남 공주시 우금티로 530</Text>
