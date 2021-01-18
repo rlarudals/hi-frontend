@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logoimg from "../../img/healthinfofontlogo.png";
+import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
+import "@szhsin/react-menu/dist/index.css";
 
 const HeaderWrapper = styled.div`
   width: 100%;
@@ -65,10 +67,30 @@ const DisplayTable = styled.div`
   table-layout: fixed;
 `;
 
+const DisplayTableCell = styled.div`
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: blue;
+`;
+
 const Header = ({ history }) => {
   const moveLinkHandler = (link) => {
     history.push(link);
   };
+
+  const MenuButton = styled.button`
+    color: black;
+    border: none;
+    background: none;
+    font-weight: 600;
+
+    &:hover {
+      color: #bbbbbb;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  `;
 
   return (
     <HeaderWrapper>
@@ -82,75 +104,104 @@ const Header = ({ history }) => {
 
       <InnerWrapper width={`900px`}>
         <DisplayTable>
-          <NavLink
-            to="/schoolh"
-            style={{
-              display: "table-cell",
-              verticalAlign: "middle",
-              height: "70px",
-              color: "black",
-              textAlign: "center",
+          <DisplayTableCell>
+            <Menu menuButton={<MenuButton>학교보건</MenuButton>}>
+              <MenuItem>
+                <Link to="/schoolh" style={{ color: "black" }}>
+                  신체건강
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/schoolh" style={{ color: "black" }}>
+                  정신건강
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/schoolh" style={{ color: "black" }}>
+                  사고예방과 응급처치
+                </Link>
+              </MenuItem>
+            </Menu>
+          </DisplayTableCell>
+          <DisplayTableCell>
+            <Menu menuButton={<MenuButton>생명</MenuButton>}>
+              <MenuItem>
+                <Link to="/lovelife" style={{ color: "black" }}>
+                  자살예방
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/lovelife" style={{ color: "black" }}>
+                  생명공학자료실
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/schoolh" style={{ color: "black" }}>
+                  생명존중
+                </Link>
+              </MenuItem>
+            </Menu>
+          </DisplayTableCell>
 
-              // borderRight: "2px solid #999",
-            }}
-          >
-            학교 보건
-          </NavLink>
+          <DisplayTableCell>
+            <Menu menuButton={<MenuButton>의약품</MenuButton>}>
+              <MenuItem>
+                <Link to="/medicine" style={{ color: "black" }}>
+                  의약품이란?
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/medicine" style={{ color: "black" }}>
+                  약물이상반응
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/schoolh" style={{ color: "black" }}>
+                  의약품 안전정보
+                </Link>
+              </MenuItem>
+            </Menu>
+          </DisplayTableCell>
 
-          <NavLink
-            to="/lovelife"
-            style={{
-              display: "table-cell",
-              verticalAlign: "middle",
-              height: "70px",
-              color: "black",
-              textAlign: "center",
-              // borderRight: "2px solid #999",
-            }}
-          >
-            생명
-          </NavLink>
+          <DisplayTableCell>
+            <Menu menuButton={<MenuButton>체육</MenuButton>}>
+              <MenuItem>
+                <Link to="/pe" style={{ color: "black" }}>
+                  건강체력증진
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/pe" style={{ color: "black" }}>
+                  학교스포츠클럽
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/schoolh" style={{ color: "black" }}>
+                  학교체육시설
+                </Link>
+              </MenuItem>
+            </Menu>
+          </DisplayTableCell>
 
-          <NavLink
-            to="/medicine"
-            style={{
-              display: "table-cell",
-              verticalAlign: "middle",
-              height: "70px",
-              color: "black",
-              textAlign: "center",
-              // borderRight: "2px solid #999",
-            }}
-          >
-            의약품
-          </NavLink>
-
-          <NavLink
-            to="/pe"
-            style={{
-              display: "table-cell",
-              verticalAlign: "middle",
-              height: "70px",
-              color: "black",
-              textAlign: "center",
-              // borderRight: "2px solid #999",
-            }}
-          >
-            체육
-          </NavLink>
-
-          <NavLink
-            to="/eatinglife"
-            style={{
-              display: "table-cell",
-              verticalAlign: "middle",
-              height: "70px",
-              color: "black",
-              textAlign: "center",
-            }}
-          >
-            식생활
-          </NavLink>
+          <DisplayTableCell>
+            <Menu menuButton={<MenuButton>식생활</MenuButton>}>
+              <MenuItem>
+                <Link to="/eatinglife" style={{ color: "black" }}>
+                  건강한 밥상
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/eatinglife" style={{ color: "black" }}>
+                  권장 칼로리
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/schoolh" style={{ color: "black" }}>
+                  식생활 정보 사이트
+                </Link>
+              </MenuItem>
+            </Menu>
+          </DisplayTableCell>
         </DisplayTable>
       </InnerWrapper>
       <InnerWrapper width={`200px`}>
