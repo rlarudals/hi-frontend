@@ -20,7 +20,7 @@ const MM01AreaBox = styled.div`
 const MM01Presenter = () => {
   return (
     <MM01Area>
-      <MM01AreaBox>Box</MM01AreaBox>
+      <MM01AreaBox>MM01</MM01AreaBox>
     </MM01Area>
   );
 };
