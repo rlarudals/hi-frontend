@@ -56,7 +56,7 @@ const TextBox = styled.div`
   align-items: center;
   justify-content: center;
 
-  transition: 0.5s;
+  transition: 0.6s;
 
   &:hover {
     font-weight: 700;
@@ -66,7 +66,7 @@ const TextBox = styled.div`
 const Text = styled.div`
   font-size: 14px;
 
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   cursor: pointer;
 `;
@@ -85,7 +85,7 @@ const Footer = () => {
           <TextBox width={`300px`} height={`400px`}>
             <Text>(주)단순한주식회사</Text>
             <Text>사업자 등록번호 : 14523-94-03562</Text>
-            <Text>통신판매업신고번호 : 제 2020-충남공주-1002</Text>
+            <Text>통신판매업신고번호 : 제 2020-54-1002</Text>
             <Text>법인명 : (주)health</Text>
           </TextBox>
           <TextBox>
