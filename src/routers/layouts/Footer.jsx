@@ -9,8 +9,6 @@ const FooterArea = styled.footer`
 `;
 
 const FooterAreaContent = styled.div`
-  width: 100%;
-
   background-color: ${(props) => props.theme.greyColor};
   color: ${(props) => props.theme.blackColor};
 
@@ -55,6 +53,9 @@ const TextBox = styled.div`
   display: flex;
   flex-direction: column;
 
+  align-items: center;
+  justify-content: center;
+
   transition: 0.5s;
 
   &:hover {
@@ -76,12 +77,12 @@ const Footer = () => {
       <FooterAreaContent>
         <FooterWrapper width={`300px`} height={`300px`}>
           <LogoBox>
-            <img src={logoimg} width="190px" height="30px" />
+            <img src={logoimg} width="190px" height="40px" />
           </LogoBox>
         </FooterWrapper>
 
         <FooterBox>
-          <TextBox width={`100%`} height={`300px`}>
+          <TextBox width={`300px`} height={`400px`}>
             <Text>(주)단순한주식회사</Text>
             <Text>사업자 등록번호 : 14523-94-03562</Text>
             <Text>통신판매업신고번호 : 제 2020-충남공주-1002</Text>

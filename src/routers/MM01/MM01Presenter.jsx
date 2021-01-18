@@ -18,7 +18,11 @@ const MM01AreaBox = styled.div`
 `;
 
 const MM01Presenter = () => {
-  return <MM01Area>MM01</MM01Area>;
+  return (
+    <MM01Area>
+      <MM01AreaBox>Box</MM01AreaBox>
+    </MM01Area>
+  );
 };
 
 export default MM01Presenter;
