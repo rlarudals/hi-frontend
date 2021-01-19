@@ -87,7 +87,7 @@ const MM15Presenter = () => {
           <a href="https://www.youtube.com/watch?v=qqel92gLPjg">
             <ImageBox src={eatinglifeg} width="300px" height="200px" />
           </a>
-        </ImageWrapper>{" "}
+        </ImageWrapper>
         <ImageWrapper>
           <a href="https://www.youtube.com/watch?v=2cMl_kW4Zi8&t=5s">
             <ImageBox src={eatinglifeh} width="300px" height="200px" />

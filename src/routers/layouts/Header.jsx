@@ -187,7 +187,7 @@ const Header = ({ history }) => {
             <Menu menuButton={<MenuButton>식생활</MenuButton>}>
               <MenuItem>
                 <Link to="/eatinglifeone" style={{ color: "black" }}>
-                  건강한 밥상 홍보
+                  건강한 식생활 홍보 영상
                 </Link>
               </MenuItem>
               <MenuItem>
