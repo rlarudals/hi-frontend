@@ -53,7 +53,7 @@ const TextBox = styled.div`
   display: flex;
   flex-direction: column;
 
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   transition: 0.6s;
