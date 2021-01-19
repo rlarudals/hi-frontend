@@ -13,17 +13,23 @@ const TitleBox = styled.div`
   width: 200px;
   height: 50px;
 
-  margin-left: 10px;
+  margin-left: 35px;
+  margin-bottom: 35px;
 
   display: flex;
   flex-direction: row;
 
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: 600;
+  }
 `;
 
 const Title = styled.span`
-  font-size: 20px;
+  font-size: 25px;
 
   display: flex;
   flex-direction: row;
@@ -34,13 +40,13 @@ const TextBox = styled.div`
   height: 250px;
 
   margin-left: 50px;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 90px;
 `;
 
 const Text = styled.p`
   font-size: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-weight: 600;
 `;
 
@@ -48,7 +54,8 @@ const ImgBox = styled.img`
   width: 700px;
   height: 300px;
 
-  margin-left: 50px;
+  margin-left: 80px;
+  margin-top: 60px;
 `;
 
 const AreaBox = styled.div`

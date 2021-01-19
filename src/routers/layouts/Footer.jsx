@@ -14,9 +14,9 @@ const FooterAreaContent = styled.div`
 
   display: flex;
   flex-direction: row;
+
   align-items: center;
   justify-content: center;
-  padding: 15px;
 `;
 
 const FooterWrapper = styled.div`
@@ -25,8 +25,8 @@ const FooterWrapper = styled.div`
 `;
 
 const LogoBox = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 100px;
 
   display: flex;
   flex-direction: row;
@@ -34,17 +34,15 @@ const LogoBox = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  margin-top: 40px;
+  margin-top: 50px;
 `;
 
 const FooterBox = styled.div`
-  width: 500px;
-  height: 230px;
+  width: 300px;
+  height: 215px;
 
   display: flex;
   flex-direction: row;
-
-  margin-top: 40px;
 `;
 
 const TextBox = styled.div`
@@ -55,6 +53,7 @@ const TextBox = styled.div`
 
   align-items: flex-start;
   justify-content: center;
+  margin-top: 20px;
 
   transition: 0.6s;
 
@@ -66,7 +65,7 @@ const TextBox = styled.div`
 const Text = styled.div`
   font-size: 14px;
 
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   cursor: pointer;
 `;
@@ -75,19 +74,21 @@ const Footer = () => {
   return (
     <FooterArea>
       <FooterAreaContent>
-        <FooterWrapper width={`300px`} height={`300px`}>
+        <FooterWrapper width={`300px`} height={`210px`}>
           <LogoBox>
-            <img src={logoimg} width="190px" height="40px" />
+            <img src={logoimg} width="200px" height="40px" />
           </LogoBox>
         </FooterWrapper>
 
         <FooterBox>
-          <TextBox width={`300px`} height={`400px`}>
+          <TextBox width={`200px`} height={`200px`}>
             <Text>(주)단순한주식회사</Text>
             <Text>사업자 등록번호 : 14523-94-03562</Text>
             <Text>통신판매업신고번호 : 제 2020-54-1002</Text>
             <Text>법인명 : (주)health</Text>
           </TextBox>
+        </FooterBox>
+        <FooterBox>
           <TextBox>
             <Text>대표이사 : 김경민,방효진,정예림</Text>
             <Text>개인정보관리책임자 : 김경민,방효진,정예림</Text>
