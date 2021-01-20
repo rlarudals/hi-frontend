@@ -17,10 +17,14 @@
 
 # Theme Color
 
-- #5696cb
-- #133660
-- #63b8ff
+- #ffffff
+- #0b0b0b
 - #808080
+- #777
+- #0a3d62
+- #3c6382
+- #60a3bc
+- #82ccdd
 
 ### React Project Needs Babel Packpage
 
