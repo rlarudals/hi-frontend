@@ -75,15 +75,11 @@ const DetailTitle = styled.div`
 `;
 
 const ImageBox = styled.img`
-  width: 200px;
-  height: 120px;
-
+  width: 300px;
+  height: 200px;
   border-radius: 10px;
 
-  transition: 0.5s;
-  margin-left: 40px;
-
-  cursor: pointer;
+  transition: 0.3s;
 
   &:hover {
     box-shadow: ${(props) => props.theme.boxShadow};
