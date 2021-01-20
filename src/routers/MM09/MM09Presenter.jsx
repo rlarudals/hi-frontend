@@ -33,7 +33,7 @@ const SpanWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 1px #badc58 solid;
+  border-bottom: 2px #badc58 solid;
   padding: 0px 0px 30px 0px;
 `;
 
@@ -51,7 +51,7 @@ const ImgWrapper = styled.div`
 const TextWrapper = styled.div`
   width: ${(props) => props.width || `100%`};
   height: ${(props) => props.height || `100%`};
-  margin: 0px 0px 20px 20px;
+  margin: 20px 0px 50px 0px;
   padding: ${(props) => props.padding || ``};
 
   display: flex;
@@ -60,17 +60,17 @@ const TextWrapper = styled.div`
 `;
 
 const SpanTextMain = styled.span`
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  text-shadow: 2px 8px 6px #badc58, 0px -3px 20px #6ab04c;
-`;
-
-const SpanText = styled.span`
   font-size: 30px;
   font-weight: bold;
   color: white;
-  text-shadow: 2px 8px 6px #badc58, 0px -3px 20px #6ab04c;
+  text-shadow: 2px 8px 4px #badc58, 0px 3px 10px #6ab04c;
+`;
+
+const SpanText = styled.span`
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 8px 4px #badc58, 0px 3px 10px #6ab04c;
 `;
 
 const ImageBox = styled.img`
