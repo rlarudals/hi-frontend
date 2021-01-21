@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   height: ${(props) => props.height || `100%`};
   margin: ${(props) => props.margin || ``};
   padding: ${(props) => props.padding || ``};
+  background-color: ${(props) => props.bgColog || ``};
 
   display: flex;
   flex-direction: ${(props) => props.dr || `column`};
