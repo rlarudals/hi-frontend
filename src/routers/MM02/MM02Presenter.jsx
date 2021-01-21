@@ -17,7 +17,7 @@ const TitleBox = styled.div`
   height: 50px;
 
   margin-left: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 70px;
 
   display: flex;
   flex-direction: column;
@@ -58,9 +58,9 @@ const DetailWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin-top: 10px;
+  margin-top: 60px;
   margin-left: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 `;
 
 const DetailTitle = styled.div`
@@ -79,7 +79,7 @@ const ImageBox = styled.img`
   height: 200px;
   border-radius: 10px;
 
-  transition: 0.3s;
+  transition: 0.5s;
 
   &:hover {
     box-shadow: ${(props) => props.theme.boxShadow};
