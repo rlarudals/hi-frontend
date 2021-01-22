@@ -25,7 +25,7 @@ const LogoBox = styled.div`
 const FooterTxt = styled.p`
   font-size: 15px;
   color: #ececec;
-  margin: 0 0 17px 100px;
+  margin: 10px 0px 10px 100px;
 `;
 
 const Footer = () => {
@@ -37,16 +37,14 @@ const Footer = () => {
         </LogoBox>
       </Wrapper>
       <Wrapper height={`100%`} width={`900px`} al={`center`} ju={`center`}>
+        <FooterTxt>(주) 4leaf / 충남 공주시 우금티로 530</FooterTxt>
         <FooterTxt>
-          (주)단순한주식회사 / 충남 공주시 우금티로 530 (주)주식회사
+          사업자 등록번호 : 14523-94-03562 / 통신판매업신고번호 : 제
+          2020-54-1002호 / 직업정보제공사업 신고번호 : H7305724692620
         </FooterTxt>
         <FooterTxt>
-          사업자 등록번호: 14523-94-03562 / 통신판매업신고번호: 제
-          2020-54-1002호 / 직업정보제공사업 신고번호: H7305724692620
-        </FooterTxt>
-        <FooterTxt>
-          대표이사: 김경민,방효진,정예림 /
-          개인정보관리책임자:김경민,방효진,정예림
+          대표이사 : 김경민, 방효진, 정예림 / 개인정보관리책임자 : 김경민,
+          방효진, 정예림
         </FooterTxt>
         <FooterTxt>© 2021 health</FooterTxt>
       </Wrapper>
