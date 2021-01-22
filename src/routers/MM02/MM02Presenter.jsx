@@ -14,28 +14,23 @@ const MM02Area = styled.div`
 `;
 
 const TitleBox = styled.div`
-  width: 300px;
-  height: 50px;
-
-  margin-left: 30px;
-  margin-bottom: 70px;
+  width: ${(props) => props.width || `45.7%`};
+  height: ${(props) => props.height || `100%`};
+  margin: 20px 30px 40px 40px;
+  padding: 0px 0px 30px 0px;
 
   display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
-
+  flex-direction: row;
+  justify-content: flex-start;
   border-bottom: 7px #83adbd solid;
 `;
 
 const Title = styled.span`
-  font-size: 25px;
-  color: #ffffff;
-
-  display: flex;
-  flex-direction: row;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
   text-shadow: 2px 8px 4px #60a3bc, 0px 3px 10px #0a3d62;
+  margin: 0px 0px 0px 10px;
 `;
 
 const InnerWrapper = styled.div`
@@ -87,12 +82,19 @@ const ImageBox = styled.img`
   }
 `;
 
+const EmjText = styled.span`
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px 0px 0px 30px;
+`;
+
 const MM02Presenter = () => {
   return (
     <MM02Area>
       <TitleBox>
         <Fade>
-          <Title>학생 정신건강 동영상 🖥</Title>
+          <EmjText>🖥</EmjText>
+          <Title>학생들의 정신건강을 위한 영상</Title>
         </Fade>
       </TitleBox>
 
@@ -102,7 +104,7 @@ const MM02Presenter = () => {
             <a href="https://www.youtube.com/watch?v=ISzkvqwT5ho">
               <ImageBox src={mentalhealth} />
             </a>
-            <DetailTitle>학생정서교육-우울</DetailTitle>
+            <DetailTitle>학생정서교육 (우울)</DetailTitle>
           </DetailWrapper>
         </Fade>
         <Fade left>
@@ -110,7 +112,7 @@ const MM02Presenter = () => {
             <a href="https://www.youtube.com/watch?v=AAXH9c9NQPA">
               <ImageBox src={mentalhealtha} />
             </a>
-            <DetailTitle>학생정서교육-분노조절</DetailTitle>
+            <DetailTitle>학생정서교육 (분노조절)</DetailTitle>
           </DetailWrapper>
         </Fade>
 
