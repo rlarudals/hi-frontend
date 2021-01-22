@@ -22,6 +22,7 @@ import MM17 from "../MM17";
 
 const WholeWrapper = styled.div`
   width: 100%;
+  overflow-x: hidden; //horizontal
 `;
 
 const Content = () => {
