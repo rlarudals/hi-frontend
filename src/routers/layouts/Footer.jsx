@@ -4,7 +4,7 @@ import logoimg from "../../img/healthinfofontlogo.png";
 import { Wrapper } from "../../components/commonComponent";
 
 const FooterWrapper = styled.div`
-  height: 150px;
+  height: 160px;
 
   background-color: ${(props) => props.theme.greyColor};
 
@@ -25,7 +25,7 @@ const LogoBox = styled.div`
 const FooterTxt = styled.p`
   font-size: 15px;
   color: #ececec;
-  margin: 0 0 15px;
+  margin: 0 0 17px 100px;
 `;
 
 const Footer = () => {
@@ -45,8 +45,8 @@ const Footer = () => {
           2020-54-1002호 / 직업정보제공사업 신고번호: H7305724692620
         </FooterTxt>
         <FooterTxt>
-          대표이사: 김경민,방효진,정예림 / 개인정보관리책임자:
-          김경민,방효진,정예림
+          대표이사: 김경민,방효진,정예림 /
+          개인정보관리책임자:김경민,방효진,정예림
         </FooterTxt>
         <FooterTxt>© 2021 health</FooterTxt>
       </Wrapper>
