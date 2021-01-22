@@ -39,8 +39,8 @@ const Title = styled.span`
 `;
 
 const ImgBox = styled.img`
-  width: 500px;
-  height: 230px;
+  width: 400px;
+  height: 300px;
 
   margin-left: 20px;
 `;
