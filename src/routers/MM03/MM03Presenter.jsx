@@ -2,23 +2,19 @@ import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import accidentprevention from "../../img/accidentprevention.png";
+import accidentpreventiona from "../../img/accidentpreventiona.png";
+import accidentpreventionb from "../../img/accidentpreventionb.png";
 
 const Wrapper = styled.div`
   width: ${(props) => props.width || `100%`};
   height: ${(props) => props.height || `100%`};
-  margin: ${(props) => props.margin || ``};
-  padding: ${(props) => props.padding || ``};
-
-  display: flex;
-  flex-direction: column;
-  justify-content: ${(props) => props.ju || `center`};
 `;
 
 const TitleWrapper = styled.div`
   width: ${(props) => props.width || `20%`};
   height: ${(props) => props.height || `100%`};
 
-  margin: 20px 0 40px 50px;
+  margin: 20px 0 0 50px;
   padding: 0px 0px 30px 0px;
 
   display: flex;
@@ -40,9 +36,17 @@ const Title = styled.span`
 
 const ImgBox = styled.img`
   width: 400px;
-  height: 300px;
+  height: 550px;
 
-  margin-left: 20px;
+  margin: 40px 0 40px 60px;
+  background-color: ${(props) => props.theme.checkColor};
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: ${(props) => props.theme.boxShadow};
+    transition: 0.6s;
+  }
 `;
 
 const MM03Presenter = () => {
@@ -54,6 +58,8 @@ const MM03Presenter = () => {
         </Fade>
       </TitleWrapper>
       <ImgBox src={accidentprevention} />
+      <ImgBox src={accidentpreventiona} />
+      <ImgBox src={accidentpreventionb} />
     </Wrapper>
   );
 };
