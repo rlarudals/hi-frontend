@@ -11,27 +11,23 @@ const Wrapper = styled.div`
 `;
 
 const TitleWrapper = styled.div`
-  width: ${(props) => props.width || `20%`};
+  width: ${(props) => props.width || `45.7%`};
   height: ${(props) => props.height || `100%`};
-
-  margin: 20px 0 0 50px;
+  margin: 40px 30px 0px 40px;
   padding: 0px 0px 30px 0px;
 
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-
   border-bottom: 7px #83adbd solid;
 `;
 
 const Title = styled.span`
-  font-size: 25px;
-  color: #ffffff;
-  margin-left: 15px;
-
-  display: flex;
-  flex-direction: row;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
   text-shadow: 2px 8px 4px #60a3bc, 0px 3px 10px #0a3d62;
+  margin: 0px 0px 0px 10px;
 `;
 
 const ImgBox = styled.img`
@@ -49,11 +45,18 @@ const ImgBox = styled.img`
   }
 `;
 
+const EmjText = styled.span`
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px 0px 0px 30px;
+`;
+
 const MM03Presenter = () => {
   return (
     <Wrapper>
       <TitleWrapper>
         <Fade>
+          <EmjText>🚨</EmjText>
           <Title>학생 사고예방과 응급처치</Title>
         </Fade>
       </TitleWrapper>

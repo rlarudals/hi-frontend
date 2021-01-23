@@ -93,7 +93,7 @@ const MM02Presenter = () => {
     <MM02Area>
       <TitleBox>
         <Fade>
-          <EmjText>🖥</EmjText>
+          <EmjText>🎬</EmjText>
           <Title>학생들의 정신건강을 위한 영상</Title>
         </Fade>
       </TitleBox>
