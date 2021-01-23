@@ -17,7 +17,7 @@ const MM01Area = styled.div`
 const TitleBox = styled.div`
   width: ${(props) => props.width || `47%`};
   height: ${(props) => props.height || `100%`};
-  margin: 20px 30px 40px 40px;
+  margin: 40px 30px 40px 40px;
   padding: 0px 0px 23px 0px;
 
   display: flex;
