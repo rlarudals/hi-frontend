@@ -11,7 +11,6 @@ const HeaderWrapper = styled.div`
   //background-color: ${(props) => props.theme.mainThemeColor};
   color: ${(props) => props.theme.whiteColor};
   box-shadow: ${(props) => props.theme.boxShadow};
-  margin-bottom: 40px;
 
   display: flex;
   flex-direction: row;
@@ -167,7 +166,7 @@ const Header = ({ history }) => {
             <Menu menuButton={<MenuButton>체육</MenuButton>}>
               <MenuItem>
                 <Link to="/peone" style={{ color: "black" }}>
-                  건강체력증진
+                  건강체력
                 </Link>
               </MenuItem>
               <MenuItem>

@@ -13,6 +13,7 @@ const MM12Wrapper = styled.div`
   display: flex;
   flex-direction: row;
 `;
+
 const MM12Presenter = () => {
   return <MM12Wrapper>s</MM12Wrapper>;
 };

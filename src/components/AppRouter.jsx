@@ -3,6 +3,7 @@ import { HashRouter as Router, Route } from "react-router-dom";
 import Header from "../routers/layouts/Header";
 import Content from "../routers/layouts/Content";
 import Footer from "../routers/layouts/Footer";
+import { Wrapper } from "../components/commonComponent";
 
 const AppRouter = () => {
   return (
@@ -11,7 +12,9 @@ const AppRouter = () => {
       <Route path="/" component={Header} />
 
       {/*CONTENT */}
-      <Route path="/" component={Content} />
+      <Wrapper>
+        <Route path="/" component={Content} />
+      </Wrapper>
 
       {/* FOOTER*/}
       <Route path="/" component={Footer} />
