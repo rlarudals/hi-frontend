@@ -37,7 +37,7 @@ const Footer = () => {
           <img src={logoimg} width="200px" height="40px" />
         </LogoBox>
       </Wrapper>
-      <Wrapper height={`100%`} width={`800px`} al={`center`} ju={`center`}>
+      <Wrapper height={`100%`} width={`1000px`} al={`center`} ju={`center`}>
         <FooterTxt>(주) 4leaf / 충남 공주시 우금티로 530</FooterTxt>
         <FooterTxt>
           사업자 등록번호 : 14523-94-03562 / 통신판매업신고번호 : 제
