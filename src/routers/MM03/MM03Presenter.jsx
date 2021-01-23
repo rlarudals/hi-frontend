@@ -39,7 +39,7 @@ const ImgBox = styled.img`
   height: 550px;
 
   margin: 40px 0 40px 60px;
-  background-color: ${(props) => props.theme.checkColor};
+
   border-radius: 10px;
   cursor: pointer;
 
