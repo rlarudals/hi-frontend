@@ -14,28 +14,23 @@ const MM06Area = styled.div`
 `;
 
 const TitleBox = styled.div`
-  width: 300px;
-  height: 50px;
-
-  margin-left: 30px;
-  margin-bottom: 35px;
+  width: ${(props) => props.width || `45.7%`};
+  height: ${(props) => props.height || `100%`};
+  margin: 40px 30px 40px 40px;
+  padding: 0px 0px 30px 0px;
 
   display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
-
+  flex-direction: row;
+  justify-content: flex-start;
   border-bottom: 7px #83adbd solid;
 `;
 
 const Title = styled.span`
-  font-size: 25px;
-  color: #ffffff;
-
-  display: flex;
-  flex-direction: row;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
   text-shadow: 2px 8px 4px #60a3bc, 0px 3px 10px #0a3d62;
+  margin: 0px 0px 0px 10px;
 `;
 
 const InnerWrapper = styled.div`
@@ -87,11 +82,18 @@ const ImageBox = styled.img`
   }
 `;
 
+const EmjText = styled.span`
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px 0px 0px 30px;
+`;
+
 const MM06Presenter = () => {
   return (
     <MM06Area>
       <TitleBox>
-        <Title>학생 자살예방교육 동영상 🖥</Title>
+        <EmjText>🎬</EmjText>
+        <Title>학생들의 자살예방을 위한 영상</Title>
       </TitleBox>
       <InnerWrapper>
         <Fade left>
@@ -99,7 +101,7 @@ const MM06Presenter = () => {
             <a href="https://www.youtube.com/watch?v=YIQZxvCA1q4">
               <ImageBox src={suicideprevention} />
             </a>
-            <DetailTitle>학생 자살예방교육-고등용</DetailTitle>
+            <DetailTitle>학생 자살예방교육 (고등용)</DetailTitle>
           </DetailWrapper>
         </Fade>
 
@@ -108,7 +110,7 @@ const MM06Presenter = () => {
             <a href="https://www.youtube.com/watch?v=e_XMM98oV80t=316s">
               <ImageBox src={suicidepreventiona} />
             </a>
-            <DetailTitle>학생 자살예방교육 중등용-변성기</DetailTitle>
+            <DetailTitle>학생 자살예방교육 (중등용)</DetailTitle>
           </DetailWrapper>
         </Fade>
 
@@ -117,7 +119,7 @@ const MM06Presenter = () => {
             <a href="https://www.youtube.com/watch?v=dkcfXFx2U2I">
               <ImageBox src={suicidepreventionb} />
             </a>
-            <DetailTitle>중등 자살예방교육 영상</DetailTitle>
+            <DetailTitle>학생 자살예방교육 (중등용 2)</DetailTitle>
           </DetailWrapper>
         </Fade>
 
@@ -126,7 +128,7 @@ const MM06Presenter = () => {
             <a href="https://www.youtube.com/watch?v=0n7lJG2PSKQ">
               <ImageBox src={suicidepreventionc} />
             </a>
-            <DetailTitle>생명존중과 자살예방 영상</DetailTitle>
+            <DetailTitle>생명존중과 자살예방</DetailTitle>
           </DetailWrapper>
         </Fade>
       </InnerWrapper>

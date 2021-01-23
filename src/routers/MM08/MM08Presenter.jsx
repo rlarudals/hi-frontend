@@ -14,29 +14,23 @@ const MM08Area = styled.div`
 `;
 
 const TitleBox = styled.div`
-  width: 300px;
-  height: 50px;
-
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 35px;
+  width: ${(props) => props.width || `45.7%`};
+  height: ${(props) => props.height || `100%`};
+  margin: 40px 30px 40px 40px;
+  padding: 0px 0px 30px 0px;
 
   display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
-
+  flex-direction: row;
+  justify-content: flex-start;
   border-bottom: 7px #83adbd solid;
 `;
 
 const Title = styled.span`
-  font-size: 25px;
-  color: #ffffff;
-
-  display: flex;
-  flex-direction: row;
-  text-shadow: 2px 8px 4px #7db6ca, 0px 3px 10px #0a3d62;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 8px 4px #60a3bc, 0px 3px 10px #0a3d62;
+  margin: 0px 0px 0px 10px;
 `;
 
 const InnerWrapper = styled.div`
@@ -90,11 +84,18 @@ const ImageBox = styled.img`
   }
 `;
 
+const EmjText = styled.span`
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px 0px 0px 30px;
+`;
+
 const MM08Presenter = () => {
   return (
     <MM08Area>
       <TitleBox>
-        <Title>동물 존중 영상 👩🏻‍💻</Title>
+        <EmjText>🎬</EmjText>
+        <Title>동물 존중 영상</Title>
       </TitleBox>
       <InnerWrapper>
         <Fade left>
