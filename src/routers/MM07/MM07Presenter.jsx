@@ -18,6 +18,7 @@ const TitleBox = styled.div`
   height: 50px;
 
   margin-left: 30px;
+  margin-top: 30px;
   margin-bottom: 35px;
 
   display: flex;
@@ -58,7 +59,7 @@ const DetailWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: 90px;
   margin-bottom: 50px;
 `;
@@ -72,6 +73,8 @@ const DetailTitle = styled.div`
 
   margin-bottom: 50px;
   margin-top: 15px;
+
+  font-weight: bold;
 `;
 
 const ImageBox = styled.img`
