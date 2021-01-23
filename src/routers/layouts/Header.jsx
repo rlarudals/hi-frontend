@@ -166,7 +166,7 @@ const Header = ({ history }) => {
             <Menu menuButton={<MenuButton>체육</MenuButton>}>
               <MenuItem>
                 <Link to="/peone" style={{ color: "black" }}>
-                  건강체력
+                  체력건강
                 </Link>
               </MenuItem>
               <MenuItem>
