@@ -29,7 +29,7 @@ const ColWrapper = styled.div`
 const SpanWrapper = styled.div`
   width: ${(props) => props.width || `48%`};
   height: ${(props) => props.height || `100%`};
-  margin: 20px 40px 40px 40px;
+  margin: 40px 40px 40px 40px;
   padding: 0px 0px 30px 0px;
 
   display: flex;
