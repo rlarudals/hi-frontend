@@ -54,11 +54,11 @@ const ImgBox = styled.img`
 const MM12Presenter = () => {
   return (
     <MM12Wrapper>
-      <Fade>
-        <TitleWrapper>
+      <TitleWrapper>
+        <Fade>
           <Title>건강체력</Title>
-        </TitleWrapper>
-      </Fade>
+        </Fade>
+      </TitleWrapper>
 
       <ImgBox src={physicalfitness} />
       <ImgBox src={physicalfitnessa} />
